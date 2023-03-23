@@ -1,0 +1,19 @@
+@import "../common//commonColor.css";
+
+.item{
+    background-color: teal;
+    margin: 20px;
+    
+}
+.item img{
+    width:100%;
+    height: 100%;
+    height: 250px;
+}
+
+.mycarousel2{
+    width:100%;
+    background-color:var(--primaryColor) ;
+    /* padding-bottom: 5%; */
+    /* padding-top: 3%; */
+}

@@ -1,0 +1,32 @@
+@import "../common/commonColor.css";
+
+.cart-item{
+    background-color:var(--secondaryColor);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.cart-item:hover{
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+
+.card-top{
+    height: 300px;
+}
+
+.card-top img{
+    width:100%;
+    height: 100%;
+}
+.card-info{
+    color: var(--fontPrimary);
+}
+.card-info h4{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.card-bottom{
+    padding: 20px;
+}
