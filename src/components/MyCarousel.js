@@ -1,6 +1,9 @@
 import React from 'react';
 import { Carousel } from "react-bootstrap";
-import "./MyCarousel.css"
+import "./MyCarousel.css";
+import img1 from "../images/main_carousel_images/img1.jpg";
+import img2 from "../images/main_carousel_images/img2.jpg"
+import img3 from "../images/main_carousel_images/img3.jpg"
 
 
 const MyCarousel = () => {
@@ -10,7 +13,7 @@ const MyCarousel = () => {
     <Carousel.Item interval={2000}>
       <img
         className="d-block w-100"
-        src="https://wallpaperaccess.com/full/37965.jpg"
+        src={img1}
         alt="First slide"
       />
       <Carousel.Caption>
@@ -21,7 +24,7 @@ const MyCarousel = () => {
     <Carousel.Item interval={2000}>
       <img
         className="d-block w-100"
-        src="https://images.hdqwalls.com/wallpapers/avengers-end-game-4k-banner-cb.jpg"
+        src={img2}
         alt="Second slide"
       />
 
@@ -33,7 +36,7 @@ const MyCarousel = () => {
     <Carousel.Item interval={2000}>
       <img
         className="d-block w-100"
-        src="https://www.pixel4k.com/wp-content/uploads/2019/10/taken-3-movie-banner_1570395347.jpg"
+        src={img3}
         alt="Third slide"
       />
 
