@@ -4,11 +4,11 @@ import {APIKEY} from "../../common/api/MovieApiKey"
 
 //we are writing ascynchronous action creator
 
-export const fetchAsyncMovies = createAsyncThunk("movies/fetchAsyncMovies", async()=>{
+export const fetchAsyncMovies = createAsyncThunk("movies/fetchAsyncMovies", async(term)=>{
 
-    const movieText = "Harry"
+    // const movieText = "Harry"
 
-    const response = await movieApi.get(`?apikey=${APIKEY}&s=${movieText}&type=movie`)
+    const response = await movieApi.get(`?apikey=${APIKEY}&s=${term}&type=movie`)
     .catch((error)=>{
       console.log("err",error)
     })
@@ -16,11 +16,11 @@ export const fetchAsyncMovies = createAsyncThunk("movies/fetchAsyncMovies", asyn
     return response.data
 })
 
-export const fetchAsyncShows = createAsyncThunk("movies/fetchAsyncShows", async()=>{
+export const fetchAsyncShows = createAsyncThunk("movies/fetchAsyncShows", async(term)=>{
 
-    const seriesText = "Friends"
+    // const seriesText = "Friends"
 
-    const response = await movieApi.get(`?apikey=${APIKEY}&s=${seriesText}&type=series`)
+    const response = await movieApi.get(`?apikey=${APIKEY}&s=${term}&type=series`)
     .catch((error)=>{
       console.log("err",error)
     })

@@ -5,3 +5,10 @@
     height: 450px;
     background-size: cover;
 }
+
+/* responsiveness */
+@media only screen and (max-width: 600px) {
+    .mycarousel img{
+       height: 350px;
+    }
+}

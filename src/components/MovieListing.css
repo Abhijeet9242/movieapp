@@ -19,3 +19,10 @@
     grid-gap: 15px;
     padding-bottom: 40px;
 }
+
+/* responsiveness */
+@media only screen and (max-width: 600px) {
+    .movie-wrapper{
+       padding: 0px 10px;
+    }
+}

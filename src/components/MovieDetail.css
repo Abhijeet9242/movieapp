@@ -9,6 +9,7 @@
     color:var(--fontPrimary);
     font-weight: 400;
     background-color: var(--primaryColor);
+    flex-direction: row;
 }
 .movie-rating{
     padding-left: 3px;
@@ -45,3 +46,37 @@
 .section-right{
     margin-left: 10px;
 }
+
+.fa-star{
+    color: #ff9e00;
+}
+.fa-thumbs-up{
+    color: #fafafa;
+}
+.fa-film{
+    color: rgba(191,213,214);
+}
+.fa-calendar{
+    color: peachpuff;
+}
+
+a{
+    /* text-decoration: none; */
+    color: var(--fontPrimary);
+}
+
+
+
+/* responsive */
+
+@media only screen and (max-width: 600px) {
+    .movie-section{
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        gap: 20px;
+    }
+    .movie-title{
+        font-size: 30px;
+        color: var(--fontPrimary);
+    }
+  }
